@@ -1,0 +1,12 @@
+@import url(//fonts.googleapis.com/earlyaccess/cwtexhei.css);
+/*楷體*/
+
+.text{
+  margin:auto;
+  font-size: 0.9em;
+  font: bold;
+}
+
+.cwTeXHei{
+  font-family: 'cwTeXHei', sans-serif;
+}

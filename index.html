@@ -1,0 +1,244 @@
+<html lang="en">
+  <head>
+    <a href="">
+      <h1>ssss</h1>
+    </a>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>ADT107118-王齡移</title>
+    <meta content="給搜尋引擎看的東西" name="description">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/stackoverflow-dark.min.css">
+    <script src="https://blocklypro.webduino.io/node_modules/jquery/dist/jquery.min.js?rev=2f6b11a7e914718e0290410e85366fe9"></script>
+    <script src="https://blocklypro.webduino.io/dist/lib/webduino-all-0.4.20.min.js?rev=4426739c00d85325cb2d3d701fa50666"></script>
+    <script src="https://blocklypro.webduino.io/dist/webduino-blockly.min.js?rev=6e074ceb23d12d1f7cf2ec95cd5a4150"></script>
+    <script src="https://blocklypro.webduino.io/dist/lib/runtime.min.js?rev=683a69503433786202911b4d9f766100"></script>
+    <script src="https://blocklypro.webduino.io/node_modules/webduino-module-rfid/RFID.js"></script>
+    <script src="https://blocklypro.webduino.io/node_modules/webduino-module-rfid/RFID-blockly.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <div class="text-center py-4 pt-lg-4 section-bg1">
+      <h1 class="mb-2 text">
+        大四物聯網系統設計應用
+      </h1>
+      <h2 class="mb-1">
+        Week06 課程
+      </h2>
+      <span class="cwTeXHei text">ADT107118-王齡移</span>
+    </div>
+    <section class="py-2 py-lg-5 bg-dark text-light">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-3">
+            <div class="sticky-top pt-4">
+              <p class="small">
+               國立台中教育大學數位內容科技學系-物聯網系統設計應用課程透過 Webduino 與 RFID控制內嵌多媒體影音應用，順便當作學習日誌
+              </p>
+              <h4>
+                學習資源彙整
+              </h4>
+              <ul class="list-unstyled">
+                <li>
+                  <a class="link-light" href="https://itechdct.ntcu.edu.tw/ntcudct_courses/DigitalCommunication/11024/login.aspx" target="_blank">教學課程網站（需登入）</a>
+                </li>
+                <li>
+                  <a class="link-light" href="https://hackmd.io/@DCT/html_css" target="_blank">CSS樣式彙整</a>
+                </li>
+              </ul>
+              <p class="small text-dark fw-bold">
+                wa.01 website for class :)
+              </p>
+              <a class="btn btn-outline-light btn-lg fw-bold" target="_blank" href="https://www.youtube.com/channel/UCkPkpR7Hx3tT1NdI07p8akQ"><i class="bi bi-youtube"></i>&nbsp;YOUTUBE</a>
+            </div>
+          </div>
+          <div class="col-lg-9 pt-4">
+            <h1>課程摘要</h1>
+
+                <div class="col-12 col-lg-6 mb-4">
+                  <h6 class="text-muted">2022/2/24</h6> 
+                  <ul class="list-group">
+                    <li class="list-group-item">1. 完成 IoT報時器系統</li>
+                    <li class="list-group-item">2. RFID 偵測與應用</li>
+                    <li class="list-group-item">3. RFID + Firebase設計應用</li>
+                  </ul>
+
+                </div>
+            <!--影片 -->
+            <div class="ratio ratio-16x9">
+             
+              <div id="player"></div>
+              
+            </div>
+            
+            
+            <!--影片 -->
+            <hr>
+            <pre class="mb-4">
+              <code class="agate">
+                
+          
+              </code>
+            </pre>
+            <h2 class="text-center">
+              底下是校內工讀製作的動畫影片
+            </h2>
+            
+    
+           
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <section class="py-1 py-lg-3 bg-dark text-light">
+      <div class="container my-1">
+        <h2 class="text-center fw-bold mb-0">
+          校園防毒守門員
+        </h2>
+        <p class="text-center my-2">
+          製作團隊：傅筱媛、林子涵、林佑蓉、王齡移、李威、周家禾、葉洵嘉
+        </p>
+        <div class="ratio ratio-16x9">
+          <div id="player1"></div>
+          <!-- <iframe id="player1" src="https://www.youtube.com/embed/80blCUV6fWw?enablejsapi=1&allowsInlineMediaPlayback=true&playsinline=1" title="YouTube video" allowfullscreen></iframe> -->
+        </div>
+        <div class="row align-items-center pt-4">
+          <div class="col text-center">
+            <div class="btn-group" role="group" aria-label="Basic outlined example">
+              <button type="button" class="btn btn-outline-light" id="play">播放</button>
+              <button type="button" class="btn btn-outline-light" id="pause">暫停</button>
+              <button type="button" class="btn btn-outline-light" id="stop">停止</button>
+              <button type="button" class="btn btn-outline-light" id="back">後退十秒</button>
+              <button type="button" class="btn btn-outline-light" id="forward">前進十秒</button>
+
+            </div>
+          </div>
+          
+          <div class="col">
+            <div class="form-group row align-items-center mb-0">
+              <div class="col-4 ">
+                <div class="mb-0 text-end" for="volume">速度</div>
+              </div>
+              <div class="col-6">
+                <input class="form-control-range" id="rate" type="range" min="0.25" max="2" step="0.25"/>
+              </div>
+              <div class="col-2">
+                <div class="custom-control d-flex align-items-center justify-content-between">
+                  <input class="col-2" id="toggleMute" type="checkbox"/>
+                  <label class="col-8" for="toggleMute">靜音</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- <script  src="./script.js"></script> -->
+  <!-- 需要將上方註解解除下方註解才可使用 RFID  -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+
+    <script>
+      var player1;
+      var playerInfoList = [{id:'player1',height:'390',width:'640',videoId:'80blCUV6fWw'},{id:'player',height:'390',width:'640',videoId:'VSUGN5chbaA'}];
+
+      function onYouTubeIframeAPIReady() {
+        if(typeof playerInfoList === 'undefined')
+           return; 
+
+        for(var i = 0; i < (playerInfoList.length - 1);i++) {
+          var curplayer = createPlayer(playerInfoList[i]);
+        }
+
+      }
+      function createPlayer(playerInfo) {
+          return new YT.Player(playerInfo.id, {
+             height: playerInfo.height,
+             width: playerInfo.width,
+             videoId: playerInfo.videoId,
+             events: {
+              'onReady': onPlayerReady2,
+              //'onStateChange': onPlayerStateChange
+              
+            }
+          });
+      }
+      function onPlayerStateChange(e){
+        console.log(e.data);
+        
+      }
+     
+
+      function onPlayerReady(e) {
+                e.target.mute().playVideo();
+              }
+
+      
+      function onPlayerReady2(e) {
+        const play = document.getElementById('play');
+        const pause = document.getElementById('pause');
+        const stop = document.getElementById('stop');
+    
+        const back = document.getElementById('back');
+        const forward = document.getElementById('forward');
+    
+        const rate = document.getElementById('rate');
+    
+        const volume = document.getElementById('volume');
+        const mute = document.getElementById('toggleMute');
+    
+        
+        //- 播放、暫停、停止
+        play.addEventListener('click', () => {
+          mute.checked = true;
+          e.target.mute().playVideo();
+        });
+        pause.addEventListener('click', () => e.target.pauseVideo());
+        stop.addEventListener('click', () => e.target.stopVideo());
+    
+        // 後退、前進10秒
+        back.addEventListener('click', () => {
+          // 先抓到目前秒數
+          let current = e.target.getCurrentTime();
+          // 後退10秒：目前秒數 - 10
+          e.target.seekTo(current - 10);
+
+          //哦哦哦 seekto 可跳特定秒數
+        });
+        forward.addEventListener('click', () => {
+          // 先抓到目前秒數
+          let current = e.target.getCurrentTime();
+          // 前進10秒：目前秒數 + 10
+          e.target.seekTo(current + 10);
+        });
+    
+        //- 速度
+        rate.value = e.target.getPlaybackRate(); // 先抓目前的速度
+        rate.addEventListener('input', () => e.target.setPlaybackRate(Number(rate.value)))
+
+        mute.addEventListener('change', () => mute.checked ? e.target.mute().playVideo() : e.target.unMute());
+    
+      }
+    </script>
+  
+  <div class="bg-dark py-5 text-center d-flex">
+    <ul class="nav mx-auto">
+      <li class="nav-item align-items-center d-flex">
+        <a class="nav-link link-light text-decoration-none" >Wang.01</a>
+      </li>
+
+      <li class="nav-item align-items-center d-flex">
+        <a class="nav-link"  target="_blank" href="https://www.facebook.com/WA0101"><img src="https://yt3.ggpht.com/52R5x_3aUhXYDJzA9rg4x6lIMQYDdfId-5AI9tQ8ZYFHG2NG452scHXc8E9ctwi01ygg7WZlXH0=s88-c-k-c0x00ffffff-no-rj"></a>
+      </li>
+
+      <li class="nav-item align-items-center d-flex">
+        <a class="nav-link link-light text-decoration-none" >Website</a>
+      </li>
+    </ul>
+  </div>
+
+</body>
+
+</html>
