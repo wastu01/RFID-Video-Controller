@@ -1,8 +1,11 @@
 (async function () {
 
+  var myFirebase;
   var youtube;
   var rfid;
-
+  var val;
+  var button;
+  var rgbled;
   var check;
   
   
@@ -16,6 +19,12 @@
       scptTag.parentNode.insertBefore(tag, scptTag);
       window.onYouTubeIframeAPIReady = function () {
         youtube = new YT.Player('player', {
+          height: '360',
+          width: '100%',
+          playerVars: {
+            autoplay: 1,
+            controls: 1
+          },
           events: {
             onReady: function (evt) {
               youtube.loadVideoById({
@@ -26,17 +35,6 @@
             onStateChange: onPlayerStateChange
           }
         });
-      //   YT.Player('player', {
-      //     events: {
-      //       onReady: function (evt) {
-      //         youtube.loadVideoById({
-      //           videoId: 'VSUGN5chbaA'
-      //         });
-      //         resolve();
-      //       },
-      //       onStateChange: onPlayerStateChange
-      //     }
-      //  });
       };
     });
     function onPlayerStateChange(event) {
@@ -48,7 +46,7 @@
         youtubePauseCallback();
       }
     };
-    var varA = 10;
+    var varA = 0;
     if (varA >= 100) {
       varA = 100;
     }
@@ -68,8 +66,11 @@
         },0);
         youtube.playVideo();
       } else if (youtube.getPlayerState() == 2) {
+               speak('播放影片',["zh-TW",1,1,0.7], async function () {
+        },0);
         youtube.playVideo();
       }
+      else(youtube.playVideo());
     });
     rfid.on("leave",async function(_uid){
       check = 'quit';
@@ -83,13 +84,3 @@
   });
   
   }());
-
-
-
-  // function onYouTubeIframeAPIReady() {
-  //   player1 = new YT.Player('player1', {
-  //     events: {
-  //       'onReady': onPlayerReady2
-  //     }
-  //   });
-  // }
